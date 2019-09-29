@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.*;
 public class annoController {
     @RequestMapping(value = "/testRequestParam",produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     /* @RequestParam 定义 前端传送过来的参数传给控制器参数  前端的name 赋值给username  */
+    /* @RequestParam 定义 前端传送过来的参数传给控制器参数  前端的name 赋值给username1231231  */
     public String testRequestParam(@RequestParam(value = "name") String username) {
         System.out.println(username);
         return "测试RequestParam";
